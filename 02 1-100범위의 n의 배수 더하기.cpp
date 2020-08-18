@@ -1,4 +1,4 @@
-#include<iostream>
+﻿#include<iostream>
 #include<Windows.h>
 
 int Get_num_multiple(int num, int end) {
@@ -16,7 +16,7 @@ int main(void) {
 	int n = 0, result = 0;
 
 	while (true) {
-		std::cout << L"N�Է�: "; // I Changed
+		std::cout << "N입력: "; // I Changed
 		std::cin >> n;
 
 		if (!std::cin) {
