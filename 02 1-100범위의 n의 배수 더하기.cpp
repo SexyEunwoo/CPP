@@ -16,7 +16,7 @@ int main(void) {
 	int n = 0, result = 0;
 
 	while (true) {
-		std::cout << "N입력: ";
+		std::cout << L"N입력: "; // I Changed
 		std::cin >> n;
 
 		if (!std::cin) {
