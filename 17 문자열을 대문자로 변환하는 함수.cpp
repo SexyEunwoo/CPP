@@ -1,0 +1,23 @@
+#include<iostream>
+
+void Strupr(char* str) {
+	while(*str) {
+		if (*str >= 97 && *str <= 122) // 소문자라면
+			*str++ -= 32;
+		else // 소문자가 아닌 경우
+			*str++;
+	}
+}
+
+int main(void) {
+	char str[100];
+
+	std::cout << "대문자로 바꿀 문자열 입력: ";
+	std::cin >> str;
+
+	Strupr(str);
+
+	std::cout << "대문자로 바뀐 문자열: " << str << std::endl;
+	
+	return 0;
+}
